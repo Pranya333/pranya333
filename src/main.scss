@@ -2,4 +2,34 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.main-nav li {
+  display: inline-block;
+}
 
+.container {
+  border: solid 3px red;
+}
+
+.sub-menu {
+  border: dotted 4px green;
+}
+
+.inline p {
+  display: inline;
+  color: blue;
+}
+
+.blocks p {
+  color: green;
+}
+
+.blocks span {
+  display: table;
+  width: 100%;
+}
+
+.inline {
+  padding: 15px;
+  padding-left: 0px;
+  border: double 5px green;
+}
