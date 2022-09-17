@@ -1,35 +1,49 @@
-body * {
-  outline: 1px solid lightgrey;
+.one {
+  margin: auto;
+  margin-top: 36px;
+  width: 20%;
+  height: 60px;
+  background: #358765;
 }
 
-.main-nav li {
-  display: inline-block;
+.two {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.container {
-  border: solid 3px red;
+.block {
+  margin: 26px;
+  width: 15%;
+  height: 150px;
+  background: olive;
 }
 
-.sub-menu {
-  border: dotted 4px green;
+.three {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.inline p {
-  display: inline;
-  color: blue;
+.blockk {
+  margin: 0px;
+  width: 15%;
+  height: 170px;
+  background: red;
 }
 
-.blocks p {
-  color: green;
+.blockk.two {
+  background: blue;
 }
 
-.blocks span {
-  display: table;
-  width: 100%;
+.blockk.three {
+  background: yellow;
 }
 
-.inline {
-  padding: 15px;
-  padding-left: 0px;
-  border: double 5px green;
+.four {
+  margin: auto;
+  margin-top: 45px;
+  width: 45%;
+  height: 55px;
+  background: gray;
 }
