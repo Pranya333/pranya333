@@ -1,48 +1,50 @@
-.one {
-  margin: auto;
-  width: 20%;
-  height: 60px;
-  background: green;
-}
+ * {
+   background-color: lightblue;
+ }
 
-.two {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+ ul {
+   padding-left: 0;
+ }
 
-.block {
-  margin: 26px;
-  width: 15%;
-  height: 150px;
-  background: olive;
-}
+ li {
+   position: relative;
+ }
 
-.three {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+ .menu {
+   display: block;
+   width: 100px;
+ }
 
-.blockk {
-  margin: 0px;
-  width: 15%;
-  height: 170px;
-  background: red;
-}
+ a {
+   display: block;
+   background-color: rgb(105, 187, 37);
+   white-space: nowrap;
+   padding: 1em;
+   border: 1px solid black;
+ }
 
-.blockk.two {
-  background: blue;
-}
+ .menu li a:hover {
+   background: rgb(85, 85, 196);
+   color: white;
+ }
 
-.blockk.three {
-  background: yellow;
-}
+ .submenu,
+ .submenu2 {
+   width: 100px;
+   list-style: none;
+   position: absolute;
+   left: 100px;
+   display: none;
+   flex-direction: column;
+   white-space: nowrap;
+ }
 
-.four {
-  margin: auto;
-  margin-top: 45px;
-  width: 45%;
-  height: 55px;
-  background: gray;
-}
+ li:hover>.submenu {
+   display: flex;
+   top: 0;
+ }
+
+ li:hover>.submenu2 {
+   display: flex;
+   top: 0;
+ }
