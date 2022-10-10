@@ -1,13 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <div>Div</div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <link href="./fonts/BebasNeue-Regular.ttf">
+  <title>Firts project</title>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      @@include("./partials/logo/_logo.html",{"first_line":"orange","second_line":"rabbit"})
+      <nav class="main_menu">
+        @@include("./partials/menu_item/_menu_item.html",{"menu_item":"home"})
+        @@include("./partials/menu_item/_menu_item.html",{"menu_item":"about"})
+        @@include("./partials/menu_item/_menu_item.html",{"menu_item":"work"})
+        @@include("./partials/menu_item/_menu_item.html",{"menu_item":"blog"})
+        @@include("./partials/menu_item/_menu_item.html",{"menu_item":"contact"})
+      </nav>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="container slider-content">
+      @@include("./partials/slider_item/_slider_item.html",
+      {"first_title":"do you like rabbits ?","second_title":"do you like oranges ?"})
+    </div>
+  </div>
+
+  <div class="main_content ">
+    <div class="container">
+      <div class="four_areas">
+        @@include("./partials/four_text_areas/_four_text_areas.html")
+      </div>
+      <div class="main_link ">
+        Meet the team...
+      </div>
+      <div class="meeting_menu">
+        @@include("./partials/meeting_menu_items/_meeting_menu_items.html",
+        {"first_text_meet":"Hoof","second_text_meet":"-Lead designer",
+        "address_of_picture_meet":"./img/meet_the_team/Layer7.png",
+        "bottom_text_meet":"Hoof is our most talented designer.However he`s not the talkative type and I would advise
+        not getting on the wrong side of him."})
+        @@include("./partials/meeting_menu_items/_meeting_menu_items.html",
+        {"first_text_meet":"Nibs","second_text_meet":"-Geo/Director",
+        "address_of_picture_meet":"./img/meet_the_team/Layer8.png",
+        "bottom_text_meet":"Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has
+        too."})
+        @@include("./partials/meeting_menu_items/_meeting_menu_items.html",
+        {"first_text_meet":"Squawk","second_text_meet":"-Developer",
+        "address_of_picture_meet":"./img/meet_the_team/Layer9.png",
+        "bottom_text_meet":"Squawk is no social bunny. But when it comes to programming he stands out from the crowd."})
+      </div>
+      <div class="main_link">
+        Send us a message...
+      </div>
+      @@include("./partials/input_menu/_input_menu.html")
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT,
+    </div>
+  </div>
+</body>
+
 </html>

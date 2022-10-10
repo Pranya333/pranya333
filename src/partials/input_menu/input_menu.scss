@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  align-items: baseline;
+}
+
+.label {
+  color: orange;
+  font-size: 24px;
+  font-family: "Stmarie";
+  font-weight: bold;
+}
+
+.input {
+  padding: 6px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(240, 235, 235);
+}
+
+.wrapper_button {
+  margin-left: auto;
+  width: fit-content;
+}
+
+.button {
+  width: fit-content;
+  background-color: orange;
+  font-size: 30px;
+  color: white;
+  margin: 5px 15px;
+}
+
+.message {
+  resize: none;
+}

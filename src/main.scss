@@ -1,5 +1,75 @@
+@import "./partials/logo/logo.scss";
+@import "./sprites.scss";
+@import "./partials/menu_item/menu_item.scss";
+@import "./partials/slider_item/slider_item.scss";
+@import "./partials/four_text_areas/four_text_areas.scss";
+@import "./partials/meeting_menu_items/meeting_menu_items.scss";
+@import "./partials/input_menu/input_menu.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
 
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.main_menu {
+  display: flex;
+  column-gap: 56px;
+}
+
+.slider {
+  background-image: url("./img/slider/big-orange-bg.png");
+  background-size: cover;
+  height: 400px;
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
+
+.four_areas {
+  display: flex;
+  width: 100%;
+}
+
+.main_link {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0;
+  color: orange;
+  text-decoration: underline;
+  font-family: "Stmarie";
+  font-weight: bold;
+}
+
+.meeting_menu {
+  display: flex;
+  width: 100%;
+  column-gap: 143px;
+}
+
+.footer {
+  background-color: orange;
+  font-size: 33px;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-family: "Stmarie";
+  font-weight: bold;
+}

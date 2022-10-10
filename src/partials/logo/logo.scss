@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    column-gap: 51px;
+    align-items: center;
+}
+
+.discription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.first_line {
+    color: orange;
+    font-size: 30px;
+    font-family: "calibri";
+}
+
+.second_line {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 40px;
+}
