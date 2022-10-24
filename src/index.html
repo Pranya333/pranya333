@@ -10,8 +10,7 @@
 </head>
 
 <body>
-  <header>
-    <div class="container header">
+  <header class="container header">    
       @@include("./partials/logo/_logo.html",{"first_line":"orange","second_line":"rabbit"})
       <nav class="main_menu">
         @@include("./partials/menu_item/_menu_item.html",{"menu_item":"home"})
@@ -19,8 +18,7 @@
         @@include("./partials/menu_item/_menu_item.html",{"menu_item":"work"})
         @@include("./partials/menu_item/_menu_item.html",{"menu_item":"blog"})
         @@include("./partials/menu_item/_menu_item.html",{"menu_item":"contact"})
-      </nav>
-    </div>
+      </nav>    
   </header>
 
   <div class="slider">
@@ -28,8 +26,7 @@
       @@include("./partials/slider_item/_slider_item.html", {"first_title":"do you like rabbits ?","second_title":"do you like oranges ?"})
     </div>
   </div>
-
-  <div class="main_content ">
+  
     <div class="container">
       <div class="four_areas">
         @@include("./partials/four_text_areas/_four_text_areas.html")
@@ -54,7 +51,7 @@
       </div>
       @@include("./partials/input_menu/_input_menu.html")
     </div>
-  </div>
+  
   <div class="footer">
     <div class="container">
       COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT,
