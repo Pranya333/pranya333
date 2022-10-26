@@ -4,6 +4,7 @@
   grid-column-gap: 50px;
   grid-row-gap: 20px;
   align-items: baseline;
+  position: relative;
 }
 
 .label {
@@ -20,8 +21,12 @@
   background-color: rgb(240, 235, 235);
 }
 
+
 .wrapper_button {  
- margin-left: auto;
+  position: absolute;
+  margin-top: auto;
+  right: 0;
+  bottom: 0;
   width: fit-content;
 }
 
@@ -36,4 +41,5 @@
 
 .message {
   resize: none;
+  margin-bottom: 55px;
 }
