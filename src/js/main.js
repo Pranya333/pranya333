@@ -1,1 +1,3 @@
-//here will by JavaScript code ...
+import { Calculator, Calculator } from "./modules/calculator";
+
+const calculator = new Calculator();
